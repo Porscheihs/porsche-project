@@ -1,214 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-    <title>Porsche 911 GT3 (992) - Легенда</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 Exhibition</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
 
-.search-style-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Расстояние между текстом и лупой */
-    margin-bottom: 25px;
-    padding: 15px;
-}
-
-.search-text {
-    font-family: 'Porsche Next', 'Arial Black', sans-serif; /* Попытка имитировать шрифт Porsche */
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 3px; /* Разреженный текст смотрится дороже */
-    color: white;
-    text-transform: uppercase;
-}
-
-.search-icon {
-    font-size: 22px;
-    cursor: default;
-    filter: grayscale(100%) brightness(200%); /* Делаем лупу более белой/серебристой */
-}
-
-html {
-    scroll-behavior: smooth; /* Это включает плавную прокрутку во всем документе */
-}
-    body {
-        background-color: black;
-        color: white;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 5px; /* Минимальный отступ */
-        text-align: center;
-    }
-
-    nav {
-        background-color: #111;
-        padding: 12px 5px;
-        margin-bottom: 10px;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 4px;
-        font-size: 0.85em;
-    }
-
-    h2 {
-        color: #e1001a;
-        font-size: 1.6em; /* Крупный заголовок */
-        margin: 15px 0 5px;
-        font-weight: bold;
-    }
-
-    img {
-        width: 95%; /* Почти на весь экран */
-        max-width: 500px;
-        border: 1px solid #e1001a;
-        border-radius: 8px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    p {
-        font-size: 0.9em;
-        color: #ddd;
-        margin: 5px 0 20px;
-        line-height: 1.2;
-    }
-/* Контейнер для всех кнопок */
-.porsche-nav {
-    display: flex;
-    flex-wrap: wrap;         /* Позволяет кнопкам переходить на новую строку */
-    justify-content: center;    /* Центрирует кнопки по середине */
-    gap: 8px;               /* Одинаковое расстояние между кнопками */
-    padding: 15px 5px;
-    background-color: #000;  /* Черный фон, как у Porsche */
-}
-
-/* Единый стиль для каждой кнопки */
-.btn {
-    text-decoration: none;
-    color: #fff;             /* Белый текст */
-    background-color: #222;  /* Темно-серый фон кнопки */
-    padding: 10px 14px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #444;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-/* Эффект при нажатии/наведении */
-.btn:hover {
-    background-color: #d5001c; /* Фирменный красный Porsche */
-    border-color: #d5001c;
-}
-
-</style>
 <body>
-<div class="search-style-header">
-    <span class="search-text">PORSCHE 911</span>
-    <span class="search-icon">🔎</span>
-</div>
-<header>
-<div> 
-<nav class="porsche-nav">
-    <a href="#gt3" class="btn">GT3</a>
-    <a href="#gt3-rs" class="btn">GT3 RS</a>
-    <a href="#turbo-s" class="btn">Turbo S</a>
-    <a href="#carrera-4s" class="btn">Carrera 4S</a>
-    <a href="#carrera" class="btn">Carrera</a>
-    <a href="#carrera-t" class="btn">Carrera T</a>
-    <a href="#carrera-s" class="btn">Carrera S</a>
-    <a href="#carrera-4" class="btn">Carrera 4</a>
-    <a href="#targa-4s" class="btn">Targa 4S</a>
-    <a href="#turbo" class="btn">Turbo</a>
-    <a href="#gt2-rs" class="btn">GT2 RS</a>
-    <a href="#dakar" class="btn">Dakar</a>
-    <a href="#s-t" class="btn">S/T</a>
-</nav>
-</div>
-</header>
-    <header>
-<div id="gt3">
-  <h2>Porsche 911 GT3</h2>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvWKZ2XAfI1oFR6VvHyXQt3xIHm-5f53F0ik9xv8XlXA67w4Fku-_fuXx&s=10">
-  <p>Чистый адреналин и высокие обороты.</p>
-</div>
+    <!-- Шапка сайта -->
+    <header class="search-style-header">
+        <span class="search-text">PORSCHE 911</span>
+        <span class="search-icon">🔎</span>
+    </header>
 
-<div id="gt3-rs">
-  <h2>Porsche 911 GT3 RS</h2>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnnvdTIKG2ofUM1pO1VKg0Ab0KnX8VbOGxiJN9u0vW8xKkuSpWutETg&s=10">
-  <p>Король трека с невероятной аэродинамикой.</p>
-</div>
+    <!-- Навигация -->
+    <nav class="porsche-nav">
+<section class="heritage">
+    <div class="heritage-content">
+        <h2>LEGACY OF SPEED</h2>
+        <p class="quote">"Я не мог найти автомобиль своей мечты, поэтому решил построить его сам."</p>
+        <p class="author">— Фердинанд Порше</p>
+        <div class="divider"></div>
+    </div>
+</section>
+        <a href="#gt3" class="btn">GT3</a>
+        <a href="#gt3-rs" class="btn">GT3 RS</a>
+        <a href="#turbo-s" class="btn">Turbo S</a>
+        <a href="#carrera-4s" class="btn">Carrera 4S</a>
+        <a href="#carrera" class="btn">Carrera</a>
+        <a href="#carrera-t" class="btn">Carrera T</a>
+        <a href="#carrera-s" class="btn">Carrera S</a>
+        <a href="#carrera-4" class="btn">Carrera 4</a>
+        <a href="#targa-4s" class="btn">Targa 4S</a>
+        <a href="#turbo" class="btn">Turbo</a>
+        <a href="#gt2-rs" class="btn">GT2 RS</a>
+        <a href="#dakar" class="btn">Dakar</a>
+        <a href="#s-t" class="btn">S/T</a>
+    </nav>
 
-<div id="turbo-s">
-  <h2>Porsche 911 Turbo S</h2>
-  <img src="https://avatars.mds.yandex.net/get-vertis-journal/4465444/2021-01-12-365f3cec8a65447bba7d1041b75942b2.png_1622737045549/orig" alt="Porsche 911 Turbo S">
-  <p>Эталон всепогодной скорости.</p>
-</div>
+    <!-- Основной контент (Карточки) -->
+    <main>
+        <div id="gt3" class="porsche-card reveal">
+            <h2>Porsche 911 GT3</h2>
+            <img src="img/gt3_gen.jpg" class="fade-in-image">
+            <p>Чистый адреналин и высокие обороты.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 510 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.4 сек (PDK)</li>
+                    <li><strong>Двигатель:</strong> 4.0L Atmospheric</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="carrera-4s">
-  <h2>Porsche 911 Carrera 4S</h2>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmu8FRSO98HF874pf_Ptb1_hXU7bBM5uA3miy0bL3D3_tMvbsm6uP6XI&s=10" alt="Porsche 911 Carrera 4S">
-  <p>Идеальный баланс стиля и мощи.</p>
-<div id="carrera" class="porsche-card">
-    <h3>Porsche 911 Carrera</h3>
-    <img src="https://mobile-review.com/all/wp-content/uploads/2024/05/screenshot86-7.png" alt="Porsche 911 Carrera" class="porsche-img">
-    <p>Классика в чистом виде.</p>
-</div>
+        <div id="gt3-rs" class="porsche-card reveal">
+            <h2>Porsche 911 GT3 RS</h2>
+            <img src="img/gt3rs_gen.jpg" class="fade-in-image">
+            <p>Король трека с невероятной аэродинамикой.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 525 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.2 сек</li>
+                    <li><strong>Аэродинамика:</strong> DRS система</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="carrera-t" class="porsche-card">
-    <h3>Porsche 911 Carrera T</h3>
-    <img src="https://press.porsche.co.uk/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=2642248&show=1" alt="Porsche 911 Carrera T" class="porsche-img">
-    <p>Облегченная версия для истинных фанатов драйва.</p>
-</div>
+        <div id="turbo-s" class="porsche-card reveal">
+            <h2>Porsche 911 Turbo S</h2>
+            <img src="img/turbos_gen.jpg" class="fade-in-image">
+            <p>Эталон всепогодной скорости.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 650 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 2.7 сек</li>
+                    <li><strong>Макс. скорость:</strong> 330 км/ч</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="carrera-s" class="porsche-card">
-    <h3>Porsche 911 Carrera S</h3>
-    <img src="https://en.drivar.de/wp-content/uploads/2024/11/Rent-a-Porsche-911-Carrera-4-GTS-in-Berlin.jpeg" alt="Porsche 911 Carrera S" class="porsche-img">
-    <p>Больше мощности, больше драйва.</p>
-</div>
+        <div id="carrera-4s" class="porsche-card reveal">
+            <h2>Porsche 911 Carrera 4S</h2>
+            <img src="img/carrera4s_gen.jpg" class="fade-in-image">
+            <p>Идеальный баланс стиля и мощи.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 450 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.4 сек</li>
+                    <li><strong>Привод:</strong> Полный</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="carrera-4" class="porsche-card">
-    <h3>Porsche 911 Carrera 4</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp5db0jRCtO6N_hx4gydrMOd_CkMPpj8lmvV5dv_ghcUqJeiGVOt1QFSs&s=10" alt="Porsche 911 Carrera 4" class="porsche-img">
-    <p>Полный привод для идеального сцепления.</p>
-</div>
+        <div id="carrera" class="porsche-card reveal">
+            <h2>Porsche 911 Carrera</h2>
+            <img src="img/carrera_gen.jpg" class="fade-in-image">
+            <p>Классика в чистом виде.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 385 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 4.2 сек</li>
+                    <li><strong>Макс. скорость:</strong> 293 км/ч</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="targa-4s" class="porsche-card">
-    <h3>Porsche 911 Targa 4S</h3>
-    <img src="https://motor.ru/imgs/2020/05/17/22/3913145/b751e7e76d857b0dd22c8e285fa4f9b47ebead6f.jpg" alt="Porsche 911 Targa 4S" class="porsche-img">
-    <p>Уникальный стиль с легендарной стеклянной крышей.</p>
-</div>
+        <div id="carrera-t" class="porsche-card reveal">
+            <h2>Porsche 911 Carrera T</h2>
+            <img src="img/carrerat_gen.jpg" class="fade-in-image">
+            <p>Облегченная версия для истинных фанатов драйва.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 385 л.с.</li>
+                    <li><strong>Особенность:</strong> Облегченное стекло</li>
+                    <li><strong>Дух:</strong> Пуризм и драйв</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="turbo" class="porsche-card">
-    <h3>Porsche 911 Turbo cabrio</h3>
-    <img src="https://images-porsche.imgix.net/-/media/9822EE96A6984C3585798297C0607163_2940F8B07CC44DBCBAACD91A9134FACF_CZ21V14OX0001-911-turbo-s-cabriolet-side?w=2560&h=1440&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche 911 Turbo" class="porsche-img">
-    <p>Мощь и комфорт в одном флаконе.</p>
-</div>
+        <div id="carrera-s" class="porsche-card reveal">
+            <h2>Porsche 911 Carrera S</h2>
+            <img src="img/carreras_gen.jpg" class="fade-in-image">
+            <p>Больше мощности, больше драйва.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 450 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.7 сек</li>
+                    <li><strong>Макс. скорость:</strong> 308 км/ч</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="gt2-rs" class="porsche-card">
-    <h3>Porsche 911 GT2 RS</h3>
-    <img src="https://top-tuning.ru/upload/images/news/105908/manthey_porsche_911_gt2_rs_1.jpg" alt="Porsche 911 GT2 RS" class="porsche-img">
-    <p>Самый безумный и мощный зверь в линейке.</p>
-</div>
+        <div id="carrera-4" class="porsche-card reveal">
+            <h2>Porsche 911 Carrera 4</h2>
+            <img src="img/carrera4_gen.jpg" class="fade-in-image">
+            <p>Полный привод для идеального сцепления.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 480 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.3 сек</li>
+                    <li><strong>Подвеска:</strong> PASM Sport</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="dakar" class="porsche-card">
-    <h3>Porsche 911 Dakar</h3>
-    <img src="https://robbreport.com/wp-content/uploads/2022/11/dakar03.jpg?w=1000" alt="Porsche 911 Dakar" class="porsche-img">
-    <p>Внедорожный монстр, которому не нужен асфальт.</p>
-</div>
+        <div id="targa-4s" class="porsche-card reveal">
+            <h2>Porsche 911 Targa 4S</h2>
+            <img src="img/targa4s_gen.jpg" class="fade-in-image">
+            <p>Уникальный стиль с легендарной стеклянной крышей.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 450 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 3.8 сек</li>
+                    <li><strong>Макс. скорость:</strong> 304 км/ч</li>
+                </ul>
+            </div>
+        </div>
 
-<div id="s-t" class="porsche-card">
-    <h3>Porsche 911 S/T</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb4s0QtRtFhmUXhNYZsLA1kTEEuyiXk3rEoKWtN5TxVDxBdcBhTPx92jk&s=10" alt="Porsche 911 S/T" class="porsche-img">
-    <p>Юбилейная спецверсия для пуристов.</p>
-</div>
+        <div id="turbo" class="porsche-card reveal">
+            <h2>Porsche 911 Turbo Cabrio</h2>
+            <img src="img/turbocab_gen.jpg" class="fade-in-image">
+            <p>Мощь и комфорт в одном флаконе.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 580 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 2.8 сек</li>
+                    <li><strong>Макс. скорость:</strong> 320 км/ч</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gt2-rs" class="porsche-card reveal">
+            <h2>Porsche 911 GT2 RS</h2>
+            <img src="img/gt2rs_gen.jpg" class="fade-in-image">
+            <p>Самый безумный и мощный зверь в линейке.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 700 л.с.</li>
+                    <li><strong>0-100 км/ч:</strong> 2.8 сек</li>
+                    <li><strong>Макс. скорость:</strong> 340 км/ч</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="dakar" class="porsche-card reveal">
+            <h2>Porsche 911 Dakar</h2>
+            <img src="img/dakar_gen.jpg" class="fade-in-image">
+            <p>Внедорожный монстр, которому не нужен асфальт.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 480 л.с.</li>
+                    <li><strong>Клиренс:</strong> +50 мм</li>
+                    <li><strong>Шины:</strong> All-terrain</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="s-t" class="porsche-card reveal">
+            <h2>Porsche 911 S/T</h2>
+            <img src="img/stporsche_gen.jpg" class="fade-in-image">
+            <p>Юбилейная спецверсия для пуристов.</p>
+            <div class="specs">
+                <ul>
+                    <li><strong>Мощность:</strong> 525 л.с.</li>
+                    <li><strong>Вес:</strong> 1380 кг</li>
+                    <li><strong>КПП:</strong> Механика</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <button id="scrollToTop" title="Наверх">↑</button>
+
+    <script src="animation.js"></script>
+
+<footer>
+    <div class="footer-content">
+        <p>Created by <span class="my-name">Ihsan</span></p>
+        <a href="https://www.instagram.com/micilagov.ihsan" target="_blank" class="instagram-link">
+            ПОДПИСАТЬСЯ В INSTAGRAM
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

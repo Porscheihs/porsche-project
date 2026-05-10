@@ -1,0 +1,236 @@
+.heritage {
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.heritage h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.author {
+    margin-top: 15px;
+    color: #e10613;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 40px;
+    height: 3px;
+    background: #e10613;
+    margin: 30px auto 0;
+}
+
+/* --- БАЗОВЫЕ НАСТРОЙКИ --- */
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 10px; 
+    text-align: center;
+    -webkit-tap-highlight-color: transparent; /* Убираем синее выделение при нажатии на iOS/Android */
+}
+
+.porsche-nav {
+    display: block;      /* Говорим, что это отдельный большой блок */
+    height: auto;        /* Разрешаем ему растягиваться вниз */
+    padding: 15px 5px;   /* Оставляем внутренние отступы */
+    background-color: #000;
+    text-align: center;  /* Чтобы кнопки были по центру */
+height: auto;
+}
+
+.btn {
+    display: inline-block; /* Позволяет кнопкам быть в ряд и иметь отступы */
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 5px;           /* <--- ДОБАВЬ ЭТО: создаст воздух между кнопками */
+    line-height: 2;        /* <--- ДОБАВЬ ЭТО: увеличит расстояние между рядами */
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+
+.btn:hover, .btn:active {
+    background-color: #e10613; 
+    border-color: #e10613;
+}
+
+/* --- ШАПКА (ПОИСК) --- */
+.search-style-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin: 20px 0;
+}
+
+.search-text {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+}
+
+/* --- КАРТОЧКИ МАШИН (ГЛАВНОЕ) --- */
+.porsche-card {
+    background-color: #111;
+    margin: 30px auto;
+    padding: 25px 15px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+    
+    /* Начальное состояние для анимации появления */
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Класс, который добавит JS при скролле */
+.porsche-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Эффект нажатия на карточку */
+.porsche-card:active {
+    transform: scale(0.97);
+    border-color: #e10613;
+    box-shadow: 0 5px 25px rgba(225, 6, 19, 0.2);
+}
+
+/* Текст внутри карточек */
+.porsche-card h2 {
+    color: #e10613;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.porsche-card p {
+    color: #bbb;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Картинки внутри карточек */
+.porsche-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.5s ease;
+}
+
+/* Характеристики */
+.specs ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.specs li {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #eee;
+}
+
+.specs strong {
+    color: #e10613;
+}
+
+/* --- КНОПКА НАВЕРХ --- */
+#scrollToTop {
+    display: none; 
+    position: fixed; 
+    bottom: 25px; 
+    right: 25px; 
+    z-index: 99; 
+    background-color: #e10613; 
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%; 
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+    margin-top: 50px;
+}
+
+.my-name {
+    color: #e10613;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.instagram-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #e10613;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+    background-color: #e10613;
+    box-shadow: 0 0 15px rgba(225, 6, 19, 0.5);
+}
+
+/* Контейнер для фото внутри карточки */
+.porsche-card img {
+    transition: transform 0.5s ease; /* Плавность эффекта */
+}
+
+/* Эффект при наведении на всю карточку */
+.porsche-card:hover img {
+    transform: scale(1.08); /* Увеличение фото на 8% */
+}
+
+.porsche-card {
+    overflow: hidden; /* Чтобы фото не вылезало за края карточки при увеличении */
+    transition: box-shadow 0.3s ease;
+}
+
+.porsche-card:hover {
+    box-shadow: 0 10px 30px rgba(225, 6, 19, 0.2); /* Легкое красное свечение */
+}
